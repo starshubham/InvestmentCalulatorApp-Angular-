@@ -9,21 +9,23 @@ import { Component, Input, input } from '@angular/core';
   styleUrl: './investment-results.component.css'
 })
 export class InvestmentResultsComponent {
-  // results = input<{
-  //   year: number;
-  //   interest: number;
-  //   valueEndOfYear: number;
-  //   annualInvestment: number;
-  //   totalInterest: number;
-  //   totalAmountInvested: number;
-  // }[]>();
-
-  @Input() results?: {
+  // input function 
+  results = input<{
     year: number;
     interest: number;
     valueEndOfYear: number;
     annualInvestment: number;
     totalInterest: number;
     totalAmountInvested: number;
-  }[];
+  }[]>();
+
+  // // @Input Decorator
+  // @Input() results?: {
+  //   year: number;
+  //   interest: number;
+  //   valueEndOfYear: number;
+  //   annualInvestment: number;
+  //   totalInterest: number;
+  //   totalAmountInvested: number;
+  // }[];
 }
